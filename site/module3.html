@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Module 3 Solutions</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<style>
+	body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: sans-serif;
+}
+
+/*HEADER*/
+#header-nav{
+	background-color: #000055;
+	border-radius: 0;
+	border: 0;
+	margin-top: 0px;
+	height: 60px;
+}
+/*.navbar-brand{
+	font-family: sans-serif;;
+	color: white;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: -.75;
+	text-align: center left;
+}*/
+
+.navbar-toggle{
+	position: relative;
+	float: right;
+	padding: 5px 10px;
+/*margin-top: 300px;*/
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	/*border: 1px solid transparent;*/
+	border-radius: 4px; 
+}
+
+#nav-list{
+	margin-top: 0px;/* height of colored nav bar*/
+	margin-bottom: 0px;
+}
+
+#nav-list a  {
+	color: white;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: white;
+}
+
+.navbar-header button.navbar-toggle {
+	border: 1px solid white;
+}
+
+.navbar-header .icon-bar {
+
+	border: 1px solid white;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+/*button, input, select, textarea{
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+button, html
+input[type=button], input[type=reset],
+input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button, select
+{
+	text-transform: none;
+
+button {
+
+	-webkit-writing-mode: horizontal-tb
+	!important;
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	display: inline-block;
+	text-align: center;
+	
+}
+.po{
+	margin-top: 35px;
+}*/
+.heading{
+	margin-bottom: 30px;
+	margin-top: 50px;
+	font-size: 50px;
+	font-style: bold;
+	color: cyan;
+	text-align: center;
+}
+
+
+.row
+{
+	width: 100%;
+}
+
+@media (min-width: 992px){
+	.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12
+{
+	float: left;
+	/*border: 1px solid blue;*/
+}
+.col-lg-1{
+	width: 8.33%;
+}
+.col-lg-2{
+	width: 16.66%;
+}
+.col-lg-3{
+	width: 25%;
+}
+.col-lg-4{
+	width: 33%;
+}
+.col-lg-5{
+	width: 41.66%;
+}
+.col-lg-6{
+	width: 50%;
+}
+.col-lg-7{
+	width: 58.33%;
+}
+.col-lg-8{
+	width: 66.66%;
+}
+.col-lg-9{
+	width: 74.99%;
+}
+.col-lg-10{
+	width: 83.33%;
+}
+.col-lg-11{
+	width: 91.66%;
+}
+.col-lg-12{
+	width: 100%;
+}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	
+	.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12
+	{
+		float: left;
+		
+	}
+
+.col-md-1{
+	width: 8.33%;
+}
+.col-md-2{
+	width: 16.66%;
+}
+.col-md-3{
+	width: 25%;
+}
+.col-md-4{
+	width: 33%;
+}
+.col-md-5{
+	width: 41.66%;
+}
+.col-md-6{
+	width: 50%;
+}
+.col-md-7{
+	width: 58.33%;
+}
+.col-md-8{
+	width: 66.66%;
+}
+.col-md-9{
+	width: 74.99%;
+}
+.col-md-10{
+	width: 83.33%;
+}
+.col-md-11{
+	width: 91.66%;
+}
+.col-md-12{
+	width: 100%;
+
+}
+}
+
+@media (max-width: 767px){
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+      
+      padding-top: 10px;
+      font-size: 5vw;
+	}
+
+	#collapsable-nav a {
+		font-size: 1.2px;
+    }
+
+
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}	
+section{
+	clear: margin;
+		position: relative;
+	color: white;
+	background-color: black;/* color out of the box*/
+	padding: 10px;
+	padding-top: 45px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.pot{	font-size: 100%;
+	border: 2px solid black;
+	margin-left: 15px;
+
+	background-color: blue;
+	color: white;
+	font-size: 100%;
+	
+	margin-left: 15px;
+	margin-bottom: 15px;
+
+}
+.pott{	font-size: 100%;
+	border: 2px solid black;
+	margin-left: 15px;
+
+	background-color: red;
+	color: white;
+	font-size: 100%;
+	
+	margin-left: 15px;
+	margin-bottom: 15px;
+
+}
+.pottt{	font-size: 100%;
+	border: 2px solid black;
+	margin-left: 15px;
+
+	background-color: purple;
+	color: white;
+	font-size: 100%;
+	
+	margin-left: 15px;
+	margin-bottom: 15px;
+
+}
+#main-content {
+
+	text-align: center;
+}
+#chicken{
+	/*background: right top;*/
+	/*position: relative;
+	clear: left;*/
+	float: center ;/*used to cut the excess color backgroung from the word "chicken"*/
+	padding: 2.5px 20px 2.5px 20px;/* giving space between chicken*/
+/*	border: 2px solid black;*/
+/*	background-color: red;*/
+	color: white;
+	margin-top: -45px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+#fish{
+	/*background: right top;*/
+	/*position: relative;
+	clear: left;*/
+	float: center ;/*used to cut the excess color backgroung from the word "chicken"*/
+	padding: 2.5px 20px 2.5px 20px;/* giving space between chicken*/
+/*	border: 2px solid black;*/
+/*	background-color: red;*/
+	color: white;
+	margin-top: -45px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+#sushi{
+	/*background: right top;*/
+	/*position: relative;
+	clear: left;*/
+	float: center ;/*used to cut the excess color backgroung from the word "chicken"*/
+	padding: 2.5px 20px 2.5px 20px;/* giving space between chicken*/
+/*	border: 2px solid black;*/
+/*	background-color: red;*/
+	color: white;
+	margin-top: -45px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;}
+
+</style>
+</head>
+<body>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				
+					<h1>FOOD , LLC</h1>
+					
+				
+
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data target=".navbar-collapse" aria expanded="false">
+				<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>				
+			</div>
+			 <div class="collapse navbar-collapse">
+			 	<ul id="nav-list" class="nav navbar-nav"> 
+			 		<li>
+			 			<a href="#c1"><p>CHICKEN</p></a>
+			 			<hr class="visible-xs">
+			 		</li>
+			 	
+
+			 		<li>
+			 			<a href="#c2"><p>FISH</p></a>
+			 			<hr class="visible-xs">
+			 		</li>
+
+			 	
+			 		<li>
+			 			<a href="#c3"><p>SUSHI</p></a>
+			 			<hr class="visible-xs">
+			 		</li>
+			 	</ul>
+			</div>
+			
+          </div>
+		
+	</nav>
+</header>
+
+<div id="main-content" class="container">
+	<div class="jumbotron">
+		<p class="heading">Our Menu</p>
+		<div class="row">
+		<div class="col-lg-4 col-md-6"><section><div id="chicken"><a id="c1">Chicken</a></div><p class="pot">lorem ipsum dolor sit amet. consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra ,nt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat. eu suscipit elit curcus. Praesent sed libero turpis.consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis no Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit .</p></div></section>
+		<div class="col-lg-4 col-md-6"><section><div id="fish"><a id="c2">Fish</a></div><p class="pott">lorem ipsum dolor sit amet. consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra ,nt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat. eu suscipit elit curcus. Praesent sed libero turpis.consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis no Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit .</p></div></section>
+		<div class="col-lg-4 col-md-12"><section><div id="sushi"><a id="c3">Sushi</a></div><p class="pottt">lorem ipsum dolor sit amet. consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra ,nt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat. eu suscipit elit curcus. Praesent sed libero turpis.consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis noconsectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequeat.lorem ipsum dolor sit amet,consectetur edipisicing elit, sed do eiusmod tempor incididunt ut lobore et dolore magna aliqua.Ut enim ad minim veniam, quis no Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit .</p></div></section>
+	</div>
+</div>
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
